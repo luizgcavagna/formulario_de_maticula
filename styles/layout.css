@@ -48,3 +48,49 @@ aside {
         }
     }
 }
+
+@media (width <= 990px) {
+    #app {
+        grid-template-columns: 1fr;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    main {
+        order: 2;
+        overflow-y: scroll; 
+        padding: 24px;
+
+        & .main-container {
+            max-width: 100%;
+        }
+    }
+
+    aside {
+        order: 1;
+        padding: 24px;
+
+        & .aside-container {
+            max-width: 100%;
+
+            & > img {
+                margin-top: 12px;
+                margin-inline: auto;
+                display: block;
+            }
+        }
+
+        & header {
+
+            & img {
+                margin-inline: auto;
+                display: block;
+            }
+
+            & h2,
+            & p {
+                display: none;
+            }
+        }
+    }
+}

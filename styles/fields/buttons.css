@@ -27,3 +27,13 @@ button {
         }
     }
 }
+
+@media (width <= 990px) {
+    button {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-inline: auto;
+    }
+}
